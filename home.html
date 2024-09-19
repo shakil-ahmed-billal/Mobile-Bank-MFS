@@ -21,33 +21,69 @@
           <div class="display">
             <div class="artboard artboard-demo phone-1 mx-auto">
               <!-- Acount balance -->
-              <div class="flex">
+              <div class="flex -mt-1">
                 <div class="w-11/12 mx-auto stats bg-primary text-primary-content">
                   <div class="stat">
-                    <div class="stat-title text-white font-bold">Account balance</div>
-                    <div class="stat-value">$<span id="account-blc">2050</span>
+                    <div class="stat-title text-white font-bold">
+                      Account balance
+                    </div>
+                    <div class="stat-value">
+                      $<span id="account-blc">2050</span>
                     </div>
                     <div class="stat-actions">
-                      <button id="add-funds-btn" class="btn btn-sm btn-success">Add funds</button>
+                      <button id="add-funds-btn" class="btn btn-sm btn-success">
+                        Add funds
+                      </button>
                     </div>
                   </div>
                   <div class="w-full">
                     <div class="flex flex-col justify-center mx-auto">
                       <div class="mx-auto w-8/12 rounded-full mt-4">
-                        <img class="rounded-full" src="./Image/model.jpg"alt=""/>
+                        <img
+                          class="rounded-full"
+                          src="./Image/model.jpg"
+                          alt=""
+                        />
                       </div>
-                      <h1 class="text-xl text-white font-bold text-center">SHAKIL</h1>
+                      <h1 class="text-xl text-white font-bold text-center">
+                        SHAKIL
+                      </h1>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Acount balance -->
-               <!-- bank info title -->
-              <div class="ml-4">
-                <h1 class="text-xl font-bold mt-3">🔥 Welcome to Payooo!</h1>
-                <p class="w-10/12">Enjoy easy and convenient financial services with us. Cashout </p>
+              <!-- mfs feature section -->
+              <div class="grid grid-cols-3 gap-3 m-3">
+                <button class="btn btn-outline btn-info">Info</button>
+                <button class="btn btn-outline btn-success">Success</button>
+                <button class="btn btn-outline btn-warning">Warning</button>
+                <button class="btn btn-outline btn-error">Error</button>
+                <button class="btn btn-outline btn-accent">Accent</button>
+                <button class="btn btn-outline btn-secondary">Secondary</button>
               </div>
-               <!-- bank info title -->
+              <!-- mfs feature section -->
+               <!-- add funds section -->
+               <div class="card bg-base-100 w-11/12 mx-auto shrink-0 shadow-2xl">
+                <form class="card-body p-2">
+                  <div class="form-control ">
+                    <label class="label flex justify-center">
+                      <span class="label-text">Phone Number</span>
+                    </label>
+                    <input type="email" placeholder="Enter Your Number" class="input input-bordered w-11/12 mx-auto" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label flex justify-center">
+                      <span class="label-text">PIN Number</span>
+                    </label>
+                    <input id="login-pin" type="password" placeholder="Enter Your PIN" class="input input-bordered w-11/12 mx-auto" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-primary w-11/12 mx-auto">Login</button>
+                  </div>
+                </form>
+              </div>
+               <!-- add funds section -->
             </div>
           </div>
         </div>
