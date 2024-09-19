@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Bank</title>
+    <!-- Script CDN Link add -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script CDN Link add -->
+</head>
+<body>
+    <main>
+        <section class="flex justify-center items-center mt-20">
+            <div class="mockup-phone border-primary">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-1 mx-auto">
+                    <!-- bank information -->
+                     <div class="flex justify-center items-center flex-col">
+                        <div class="w-4/12 -mt-10">
+                            <img src="./image/payoo.png" alt="">
+                        </div>
+                        <h1 class="my-2 mb-8 text-2xl font-bold ">Welcome to Payoo Bank</h1>
+                     </div>
+                    <!-- bank information -->
+                    <!-- log in from -->
+                    <div class="card bg-base-100 w-9/12 mx-auto shrink-0 shadow-2xl ">
+                        <form class="card-body p-5">
+                          <div class="form-control ">
+                            <label class="label flex justify-center">
+                              <span class="label-text">Phone Number</span>
+                            </label>
+                            <input type="email" placeholder="Enter Your Number" class="input input-bordered w-11/12 mx-auto" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label flex justify-center">
+                              <span class="label-text">PIN Number</span>
+                            </label>
+                            <input id="login-pin" type="password" placeholder="Enter Your PIN" class="input input-bordered w-11/12 mx-auto" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="login-btn" class="btn btn-primary w-11/12 mx-auto">Login</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!-- log in from -->
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="./script/index.js"></script>
+    <script src=""></script>
+</body>
+</html>
