@@ -56,16 +56,16 @@
               <!-- Acount balance -->
               <!-- mfs feature section -->
               <div class="grid grid-cols-3 gap-3 m-3">
-                <button class="btn btn-outline btn-info p-1 "><i class="fa-solid fa-sack-dollar"></i>Add Cash</button>
-                <button class="btn btn-outline btn-success p-0"><i class="fa-solid fa-wallet"></i>Cash Out</button>
-                <button class="btn btn-outline btn-warning p-0">Warning</button>
+                <button id="add-cash-button" class="btn btn-outline btn-info p-1 "><i class="fa-solid fa-sack-dollar"></i>Add Cash</button>
+                <button id="cash-out-button" class="btn btn-outline btn-success p-0 flex flex-col"><i class="fa-solid fa-wallet"></i>Cash Out</button>
+                <button id="trx-button" class="btn btn-outline btn-warning p-0"><i class="fa-solid fa-file-invoice"></i>Transaction</button>
                 <button class="btn btn-outline btn-error p-0">Error</button>
                 <button class="btn btn-outline btn-accent p-0">Accent</button>
                 <button class="btn btn-outline btn-secondary p-0">Secondary</button>
               </div>
               <!-- mfs feature section -->
                <!-- add funds section -->
-               <div class="hidden card bg-base-100 w-11/12 mx-auto shrink-0 shadow-2xl">
+               <div id="add-funds-form" class="hidden card bg-base-100 w-11/12 mx-auto shrink-0 shadow-2xl">
                 <form class="card-body p-2">
                   <div class="form-control ">
                     <label class="label flex justify-center">
@@ -86,7 +86,7 @@
               </div>
                <!-- add funds section -->
                 <!-- cash out section -->
-               <div class="card bg-base-100 w-11/12 mx-auto shrink-0 shadow-2xl">
+               <div id="cash-out-form" class="hidden card bg-base-100 w-11/12 mx-auto shrink-0 shadow-2xl">
                 <form class="card-body p-2">
                   <div class="form-control ">
                     <label class="label flex justify-center">
@@ -106,6 +106,24 @@
                 </form>
               </div>
                 <!-- cash out section -->
+                 <!-- Transaction part -->
+                  <div id="trx-section" class="card bg-yellow-100 w-11/12 mx-auto shrink-0 shadow-2xl border border-yellow-400">
+                    <!-- section part -->
+                    <table id="trx-table" class="text-center text-black ">
+                      <tr class="bg-yellow-200">
+                        <th>OPTION</th>
+                        <th>AMOUNT</th>
+                        <th>BALANCE</th>
+                      </tr>
+                      <tr class="bg-blue-400">
+                        <td class="font-bold">Add Cash</td>
+                        <td>$2050</td>
+                        <td>$2050</td>
+                      </tr>
+                    </table>
+                    <!-- section part -->
+                  </div>
+                 <!-- Transaction part -->
             </div>
           </div>
         </div>
