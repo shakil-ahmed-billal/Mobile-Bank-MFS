@@ -49,6 +49,11 @@ document
 
       //   add transaction
       const trx = document.createElement("tr");
+
+      trx.addEventListener('click', function(){
+        trx.remove()
+        console.log('name');
+      })
       trx.className = 'bg-green-400'
       trx.innerHTML = `
                         <td class="font-bold">Cash Out</td>
